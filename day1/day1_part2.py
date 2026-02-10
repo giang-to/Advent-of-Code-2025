@@ -10,10 +10,12 @@ for r in rotations:
         res += (curr_pos + step) // 100
         curr_pos = (curr_pos + step) % 100
     else:
+        #if curr_pos=0, only count complete circle
         if curr_pos==0:
             res+=step//100
         else:
+            #count complete circle + if end point is 0
             if step >= curr_pos:
                 res += (step-curr_pos) // 100+1
         curr_pos = (curr_pos - step) % 100
-print(res)  #6623
+print(res)  #answer: 6623
