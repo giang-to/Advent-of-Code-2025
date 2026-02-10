@@ -12,4 +12,4 @@ for r in rotations:
         curr_pos = (curr_pos - step) % 100
     if curr_pos==0:
         res+=1
-print(res)   #1132
+print(res)   #correct answer: 1132
