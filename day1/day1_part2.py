@@ -19,3 +19,6 @@ for r in rotations:
                 res += (step-curr_pos) // 100+1
         curr_pos = (curr_pos - step) % 100
 print(res)  #answer: 6623
+#Note: if step>=curr_pos, we goes back curr_pos steps ending at 0 (which gives 1 hit).
+# Then from 0, we move back (step-curr_pos) steps.
+# we count how many compelte circle , which is (step-curr_pos)//100
