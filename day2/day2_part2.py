@@ -21,6 +21,9 @@ DIVS = {
     10: [1, 2, 5, 10]}
 
 def arith_sum(m, M):
+    """
+    Return sum of numbers from m to M
+    """
     if m > M:
         return 0
     return (M + m) * (M - m + 1) // 2
